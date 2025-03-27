@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Sales_Target__c</members>
+        <members>Territory__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Sales_Target__c.Target_Name__c</members>
+        <members>Sales_Target__c.Target_Amount__c</members>
+        <members>Sales_Target__c.Target_Period_Start__c</members>
+        <members>Sales_Target__c.Target_Period_End__c</members>
+        <members>Sales_Target__c.Territory__c</members>
+        <members>Sales_Target__c.Sales_Rep__c</members>
+        <members>Sales_Target__c.Product_Family__c</members>
+        <members>Sales_Target__c.Status__c</members>
+        
+        <members>Territory__c.Territory_Name__c</members>
+        <members>Territory__c.Territory_Code__c</members>
+        <members>Territory__c.Region__c</members>
+        <members>Territory__c.Territory_Manager__c</members>
+        <members>Territory__c.Annual_Target__c</members>
+        
+        <members>Opportunity.Deal_Velocity__c</members>
+        <members>Opportunity.Days_in_Stage__c</members>
+        <members>Opportunity.Territory__c</members>
+        <members>Opportunity.Performance_Score__c</members>
+        <members>Opportunity.Weighted_Pipeline__c</members>
+        
+        <members>User.YTD_Sales__c</members>
+        <members>User.Target_Attainment_Percentage__c</members>
+        <members>User.Primary_Territory__c</members>
+        <name>CustomField</name>
+    </types>
+    <version>58.0</version>
+</Package>
