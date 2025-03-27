@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Performance_Score__c</fullName>
+    <description>Calculated performance score based on close probability and deal size</description>
+    <externalId>false</externalId>
+    <formula>CASE(StageName,
+        'Prospecting', 10,
+        'Qualification', 20,
+        'Needs Analysis', 30,
+        'Value Proposition', 40,
+        'Id. Decision Makers', 50,
+        'Proposal/Price Quote', 60,
+        'Negotiation/Review', 80,
+        'Closed Won', 100,
+        0
+    )</formula>
+    <formulaTreatBlanksAs>Zero</formulaTreatBlanksAs>
+    <label>Performance Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Number</type>
+</CustomField>
