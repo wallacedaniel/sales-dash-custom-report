@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Sales Summary" icon-name="standard:sales_path">
+        <div class="slds-p-around_medium">
+            <div class="slds-grid slds-grid_vertical">
+                <div class="slds-col slds-m-bottom_small">
+                    <div class="slds-text-title">Total Sales YTD</div>
+                    <div class="slds-text-heading_large">${totalSales}</div>
+                </div>
+                <div class="slds-col slds-m-bottom_small">
+                    <div class="slds-text-title">Target</div>
+                    <div class="slds-text-heading_medium">${targetAmount}</div>
+                </div>
+                <div class="slds-col">
+                    <div class="slds-text-title">Attainment</div>
+                    <div class={attainmentClass}>
+                        <span class="slds-text-heading_medium">{attainmentPercentage}%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>
