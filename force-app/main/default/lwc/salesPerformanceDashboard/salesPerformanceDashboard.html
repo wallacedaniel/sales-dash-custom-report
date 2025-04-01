@@ -1,0 +1,43 @@
+<template>
+    <lightning-card title="Sales Performance Dashboard" icon-name="standard:dashboard">
+        <div class="slds-p-around_medium">
+            <template if:true={isLoading}>
+                <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+            </template>
+            
+            <template if:false={isLoading}>
+                <div class="slds-grid slds-gutters slds-wrap">
+                    <!-- Summary Metrics -->
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3">
+                        <c-sales-summary-card sales-summary={salesSummary}></c-sales-summary-card>
+                    </div>
+                    
+                    <!-- Territory Performance -->
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3">
+                        <c-territory-performance-card territory-summary={territorySummary}></c-territory-performance-card>
+                    </div>
+                    
+                    <!-- Deal Velocity -->
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3">
+                        <c-deal-velocity-card deal-velocity={dealVelocity}></c-deal-velocity-card>
+                    </div>
+                    
+                    <!-- Sales Pipeline Chart -->
+                    <div class="slds-col slds-size_1-of-1 slds-m-top_medium">
+                        <c-sales-pipeline-chart></c-sales-pipeline-chart>
+                    </div>
+                    
+                    <!-- Performance by Territory Chart -->
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-m-top_medium">
+                        <c-territory-performance-chart territory-summary={territorySummary}></c-territory-performance-chart>
+                    </div>
+                    
+                    <!-- Target Attainment Chart -->
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-m-top_medium">
+                        <c-target-attainment-chart sales-summary={salesSummary}></c-target-attainment-chart>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
