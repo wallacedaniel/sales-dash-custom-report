@@ -32,5 +32,11 @@
         <members>User.Primary_Territory__c</members>
         <name>CustomField</name>
     </types>
+        <types>
+        <members>Territory_Sales_Performance</members>
+        <members>Rep_Performance_vs_Target</members>
+        <members>Deal_Velocity_Analysis</members>
+        <name>ReportType</name>
+    </types>
     <version>58.0</version>
 </Package>

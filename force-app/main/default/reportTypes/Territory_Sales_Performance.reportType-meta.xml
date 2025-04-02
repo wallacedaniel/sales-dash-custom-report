@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Territory_Sales_Performance</fullName>
+    <label>Territory Sales Performance</label>
+    <description>Analyze sales performance by territory</description>
+    <baseObject>Territory__c</baseObject>
+    <category>Sales Reports</category>
+    <deployed>true</deployed>
+    <joinedEntity>Opportunity</joinedEntity>
+    <masterLabel>Territory Sales Performance</masterLabel>
+    <joinType>INNER</joinType>
+</ReportType>

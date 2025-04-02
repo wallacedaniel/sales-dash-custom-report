@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rep_Performance_vs_Target</fullName>
+    <label>Rep Performance vs Target</label>
+    <description>Compare sales rep performance against targets</description>
+    <baseObject>User</baseObject>
+    <category>Sales Reports</category>
+    <deployed>true</deployed>
+    <masterLabel>Rep Performance vs Target</masterLabel>
+</ReportType>
